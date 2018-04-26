@@ -27,17 +27,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCi-PA-GLD">
-                                <rect key="frame" x="174" y="165" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCi-PA-GLD">
+                                <rect key="frame" x="5" y="165" width="365" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jnt-Z7-xft"/>
+                                </constraints>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <segue destination="heU-EG-K7A" kind="show" id="6k0-kY-vjp"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igL-cj-jmv">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igL-cj-jmv">
                                 <rect key="frame" x="139" y="103" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OmD-av-Zqf"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -46,9 +50,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xxq-Cy-cuc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="9Pa-E4-Io1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="igL-cj-jmv" secondAttribute="trailing" constant="139" id="CJo-pZ-y0l"/>
+                            <constraint firstItem="igL-cj-jmv" firstAttribute="top" secondItem="Xxq-Cy-cuc" secondAttribute="bottom" constant="33" id="Chd-Zo-Ppd"/>
                             <constraint firstItem="Xxq-Cy-cuc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="FKt-rf-RGg"/>
+                            <constraint firstItem="rCi-PA-GLD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="JrW-Ce-7bS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rCi-PA-GLD" secondAttribute="trailing" constant="5" id="Qen-Lh-mSu"/>
+                            <constraint firstItem="rCi-PA-GLD" firstAttribute="top" secondItem="igL-cj-jmv" secondAttribute="bottom" constant="32" id="Scw-UO-Tys"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xxq-Cy-cuc" secondAttribute="trailing" constant="92" id="VbS-Uf-s1e"/>
                             <constraint firstItem="Xxq-Cy-cuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sd4-Ve-lDu"/>
+                            <constraint firstItem="igL-cj-jmv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="uhK-a5-0F3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -77,9 +87,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-bz-x5A">
-                                <rect key="frame" x="118" y="171" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-bz-x5A">
+                                <rect key="frame" x="5" y="171" width="365" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wSe-5Q-0u8"/>
+                                </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="G3J-LB-rRe" kind="unwind" unwindAction="unwind:" id="fAJ-kz-FaX"/>
@@ -88,10 +100,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="YvL-bz-x5A" firstAttribute="leading" secondItem="XXu-WH-6xV" secondAttribute="leading" constant="5" id="4OV-14-u6P"/>
                             <constraint firstItem="uvt-8e-SOP" firstAttribute="centerX" secondItem="9nh-6c-DTD" secondAttribute="centerX" id="5MP-NO-Xpt"/>
                             <constraint firstItem="XXu-WH-6xV" firstAttribute="trailing" secondItem="uvt-8e-SOP" secondAttribute="trailing" constant="5" id="BFR-LO-K6Z"/>
+                            <constraint firstItem="XXu-WH-6xV" firstAttribute="trailing" secondItem="YvL-bz-x5A" secondAttribute="trailing" constant="5" id="F7Q-KI-1Gf"/>
                             <constraint firstItem="uvt-8e-SOP" firstAttribute="leading" secondItem="XXu-WH-6xV" secondAttribute="leading" constant="5" id="N5x-3z-GLH"/>
                             <constraint firstItem="uvt-8e-SOP" firstAttribute="top" secondItem="XXu-WH-6xV" secondAttribute="top" constant="35" id="dwN-DZ-GIx"/>
+                            <constraint firstItem="YvL-bz-x5A" firstAttribute="top" secondItem="uvt-8e-SOP" secondAttribute="bottom" constant="95" id="lSk-Zs-wzs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XXu-WH-6xV"/>
                     </view>
