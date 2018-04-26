@@ -13,7 +13,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     // 受け取るためのプロパティ（変数）を宣言しておく
-    var textField:String = ""
+    var name:String = "guest"
     
     
     override func viewDidLoad() {
@@ -22,8 +22,7 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        let result = textField
-        label.text = "こんにちは \(result) さん"
+        label.text = "こんにちは \(name) さん"
     }
 
     override func didReceiveMemoryWarning() {

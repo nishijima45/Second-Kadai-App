@@ -18,9 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxq-Cy-cuc">
-                                <rect key="frame" x="108" y="49" width="249" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxq-Cy-cuc">
+                                <rect key="frame" x="92" y="49" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZV8-kh-LEV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,10 +44,16 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xxq-Cy-cuc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="9Pa-E4-Io1"/>
+                            <constraint firstItem="Xxq-Cy-cuc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="FKt-rf-RGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xxq-Cy-cuc" secondAttribute="trailing" constant="92" id="VbS-Uf-s1e"/>
+                            <constraint firstItem="Xxq-Cy-cuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sd4-Ve-lDu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="namein" destination="igL-cj-jmv" id="Ege-X9-MpI"/>
+                        <outlet property="textField" destination="igL-cj-jmv" id="CFq-hR-Rrf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,9 +68,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvt-8e-SOP">
-                                <rect key="frame" x="112" y="55" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvt-8e-SOP">
+                                <rect key="frame" x="5" y="55" width="365" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1eu-hS-EKC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,6 +87,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uvt-8e-SOP" firstAttribute="centerX" secondItem="9nh-6c-DTD" secondAttribute="centerX" id="5MP-NO-Xpt"/>
+                            <constraint firstItem="XXu-WH-6xV" firstAttribute="trailing" secondItem="uvt-8e-SOP" secondAttribute="trailing" constant="5" id="BFR-LO-K6Z"/>
+                            <constraint firstItem="uvt-8e-SOP" firstAttribute="leading" secondItem="XXu-WH-6xV" secondAttribute="leading" constant="5" id="N5x-3z-GLH"/>
+                            <constraint firstItem="uvt-8e-SOP" firstAttribute="top" secondItem="XXu-WH-6xV" secondAttribute="top" constant="35" id="dwN-DZ-GIx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XXu-WH-6xV"/>
                     </view>
                     <connections>
