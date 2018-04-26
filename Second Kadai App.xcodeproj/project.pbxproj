@@ -14,6 +14,7 @@
 		EA3B4E2F208FD95D00C35A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3B4E2D208FD95D00C35A5C /* LaunchScreen.storyboard */; };
 		EA3B4E3A208FD95D00C35A5C /* Second_Kadai_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B4E39208FD95D00C35A5C /* Second_Kadai_AppTests.swift */; };
 		EA3B4E45208FD95D00C35A5C /* Second_Kadai_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B4E44208FD95D00C35A5C /* Second_Kadai_AppUITests.swift */; };
+		EA3B4E53208FDA2E00C35A5C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B4E52208FDA2E00C35A5C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EA3B4E40208FD95D00C35A5C /* Second Kadai AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Second Kadai AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3B4E44208FD95D00C35A5C /* Second_Kadai_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_Kadai_AppUITests.swift; sourceTree = "<group>"; };
 		EA3B4E46208FD95D00C35A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3B4E52208FDA2E00C35A5C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EA3B4E2B208FD95D00C35A5C /* Assets.xcassets */,
 				EA3B4E2D208FD95D00C35A5C /* LaunchScreen.storyboard */,
 				EA3B4E30208FD95D00C35A5C /* Info.plist */,
+				EA3B4E52208FDA2E00C35A5C /* ResultViewController.swift */,
 			);
 			path = "Second Kadai App";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				EA3B4E27208FD95B00C35A5C /* ViewController.swift in Sources */,
 				EA3B4E25208FD95B00C35A5C /* AppDelegate.swift in Sources */,
+				EA3B4E53208FDA2E00C35A5C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
